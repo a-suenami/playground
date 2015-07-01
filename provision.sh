@@ -23,3 +23,9 @@ sudo yum -y --enablerepo=epel install redis
 
 # MySQL
 sudo yum -y mysql
+
+# Rust
+curl -sf -L https://static.rust-lang.org/rustup.sh | sh
+# thx. https://github.com/rust-lang/rust-installer/issues/30#issuecomment-100330002
+sudo echo '/usr/local/lib' > /etc/ld.so.conf.d/local.conf
+sudo ldconfig
