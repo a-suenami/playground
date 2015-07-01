@@ -16,3 +16,10 @@ echo 'export PATH="$HOME/.rbenv/bin:$PATH"' >> ~/.bash_profile
 git clone https://github.com/sstephenson/ruby-build.git ~/.rbenv/plugins/ruby-build
 source ~/.bash_profile
 rbnev install 2.2.2
+
+# Redis
+sudo yum install epel-release
+sudo yum --enablerepo=epel install redis
+
+# MySQL
+sudo yum mysql
