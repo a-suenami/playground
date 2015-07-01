@@ -1,9 +1,9 @@
 #!/bin/sh
 
 # some package
-sudo yum install java
-sudo yum install openssl
-sudo yum install openssl-devel
+sudo yum -y install java
+sudo yum -y install openssl
+sudo yum -y install openssl-devel
 
 # Elasticsearch
 wget https://download.elastic.co/elasticsearch/elasticsearch/elasticsearch-1.6.0.tar.gz
@@ -18,8 +18,8 @@ source ~/.bash_profile
 rbnev install 2.2.2
 
 # Redis
-sudo yum install epel-release
-sudo yum --enablerepo=epel install redis
+sudo yum -y install epel-release
+sudo yum -y --enablerepo=epel install redis
 
 # MySQL
-sudo yum mysql
+sudo yum -y mysql
